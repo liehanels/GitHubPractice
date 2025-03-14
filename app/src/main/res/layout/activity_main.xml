@@ -52,7 +52,7 @@
             android:layout_marginTop="150dp"
             android:backgroundTint="@color/design_default_color_error"
             android:text="Check if Number"
-            android:textSize="24sp"
+            android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edtNumber" />

@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 //if the conversion fails, show that the input is NaN
             } catch (e: NumberFormatException) {
-                Toast.makeText(this, "The input $input is not a number", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "The input ${input.text} is not a number", Toast.LENGTH_LONG).show()
             }
         }
     }
