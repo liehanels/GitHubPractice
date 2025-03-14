@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val clickMe = findViewById<Button>(R.id.btnCheckNum)
         //set onClickListener for the button
         clickMe.setOnClickListener {
-            //try catch statement to check if the input is a number
+            //try-catch statement to check if the input is a number
             try {
                 //tries to turn the string into a number
                 val numberInt = input.text.toString().toInt()
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 //if the conversion fails, show that the input is NaN
             } catch (e: NumberFormatException) {
-                Toast.makeText(this, "The input ${input.text} is not a number", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "The input ${input.text} is not a number\n$e", Toast.LENGTH_LONG).show()
             }
         }
     }
